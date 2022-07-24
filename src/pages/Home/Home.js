@@ -5,7 +5,6 @@ import NewExperience from "../../component/NewExperience/NewExperience";
 import PreviewLast from "../../component/PreviewLast/PreviewLast";
 import Shop from "../../component/Shop/Shop";
 import TimeLine from "../../component/TimeLine/TimeLine";
-
 function Home() {
   return (
     <>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Gallery() {
   return (
-    <div className="w-full bg-black pt-20">
+    <div className="w-full bg-black pt-32">
       <div className="w-full bg-gray-300 h-[400px] relative mx-auto lg:w-[95%] lg:rounded-md mb-10">
         <div className="bg-white rounded p-5 w-2/5 absolute bottom-5 left-5 hidden md:block">
           <h1 className="text-3xl font-extrabold absolute right-5 -top-5">

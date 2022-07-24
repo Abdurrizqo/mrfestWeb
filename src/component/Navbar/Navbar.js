@@ -1,10 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 function Navbar() {
   return (
-    <div className="w-full bg-[#1E1A1D] h-[80px] flex items-center justify-between px-20">
-      <div className="text-white text-3xl font-black">Logo</div>
+    <div className="w-full bg-[#1E1A1D] h-[80px] flex items-center justify-between px-5 md:px-10 lg:px-20 fixed z-50 shadow">
+      <div className="w-24">
+        <img src={logo} className="w-24 h-24" />
+      </div>
       <div className="flex gap-4">
         <NavLink
           style={({ isActive }) => {
@@ -28,16 +31,16 @@ function Navbar() {
           Events
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           style={({ isActive }) => {
             return {
               color: isActive ? "white" : "",
             };
           }}
           to="/"
-        >
-          About
-        </NavLink>
+        > */}
+        <a href="#about"> About</a>
+        {/* </NavLink> */}
 
         <NavLink
           style={({ isActive }) => {

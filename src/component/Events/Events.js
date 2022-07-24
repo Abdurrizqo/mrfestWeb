@@ -3,7 +3,7 @@ import React from "react";
 function Events() {
   return (
     <div className="w-full bg-black px-5">
-      <div className="md:flex md:items-center py-20 md:justify-center md:gap-12">
+      <div className="md:flex md:items-center py-28 md:justify-center md:gap-12">
         <div className="bg-gray-300 w-2/4 sm:w-72 lg:w-80 xl:w-1/4 h-80 sm:h-400 md:h-[500px] mx-auto md:mx-0"></div>
         <div className="text-center text-white mt-8 md:text-left md:w-1/2 lg:w-[430px]">
           <h1 className="text-2xl lg:text-3xl font-black">LUGUBRIOUS</h1>
