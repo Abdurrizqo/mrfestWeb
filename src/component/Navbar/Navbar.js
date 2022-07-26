@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 function Navbar() {
@@ -9,60 +9,21 @@ function Navbar() {
         <img src={logo} className="w-24 h-24" />
       </div>
       <div className="flex gap-4">
-        <NavLink
-          style={({ isActive }) => {
-            return {
-              color: isActive ? "white" : "",
-            };
-          }}
-          to="/"
-        >
+        <Link className="text-white" to="/">
           Home
-        </NavLink>
-
-        <NavLink
-          style={({ isActive }) => {
-            return {
-              color: isActive ? "white" : "",
-            };
-          }}
-          to="/event"
-        >
+        </Link>
+        <a href="#event" className="text-white">
           Events
-        </NavLink>
-
-        {/* <NavLink
-          style={({ isActive }) => {
-            return {
-              color: isActive ? "white" : "",
-            };
-          }}
-          to="/"
-        > */}
-        <a href="#about"> About</a>
-        {/* </NavLink> */}
-
-        <NavLink
-          style={({ isActive }) => {
-            return {
-              color: isActive ? "white" : "",
-            };
-          }}
-          to="/"
-        >
+        </a>
+        <a href="#about" className="text-white">
+          About
+        </a>
+        <a href="#shop" className="text-white">
           Shop
-        </NavLink>
-
-        <NavLink
-          style={({ isActive }) => {
-            return {
-              color: isActive ? "white" : "",
-            };
-          }}
-          to="/gallery"
-        >
+        </a>
+        <a href="#gallery" className="text-white">
           Gallery
-        </NavLink>
+        </a>
       </div>
     </div>
   );

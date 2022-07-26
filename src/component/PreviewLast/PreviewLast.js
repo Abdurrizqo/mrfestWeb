@@ -28,6 +28,7 @@ function PreviewLast() {
 
   return (
     <div
+      id="about"
       ref={ref}
       className="w-full bg-black relative overflow-hidden py-40 lg:py-32 flex items-center"
     >

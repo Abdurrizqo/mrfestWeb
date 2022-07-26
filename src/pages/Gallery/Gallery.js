@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Gallery() {
   return (
-    <div className="w-full bg-black pt-32">
+    <div className="w-full bg-white pt-32">
       <div className="w-full bg-gray-300 h-[400px] relative mx-auto lg:w-[95%] lg:rounded-md mb-10">
         <div className="bg-white rounded p-5 w-2/5 absolute bottom-5 left-5 hidden md:block">
           <h1 className="text-3xl font-extrabold absolute right-5 -top-5">
@@ -20,19 +21,47 @@ function Gallery() {
       </div>
 
       <div className="w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-4 gap-x-2 justify-items-center px-5 pb-20">
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
-        <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
+        <Link to="/detail-item/:idItem">
+          <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
+          <h1 className=" font-bold text-xl">Nama Produk</h1>
+          <p>Rp 200.000</p>
+        </Link>
+
+        <Link to="/detail-item/:idItem">
+          <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
+          <h1 className=" font-bold text-xl">Nama Produk</h1>
+          <p>Rp 200.000</p>
+        </Link>
+
+        <Link to="/detail-item/:idItem">
+          <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
+          <h1 className=" font-bold text-xl">Nama Produk</h1>
+          <p>Rp 200.000</p>
+        </Link>
+
+        <Link to="/detail-item/:idItem">
+          <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
+          <h1 className=" font-bold text-xl">Nama Produk</h1>
+          <p>Rp 200.000</p>
+        </Link>
+
+        <Link to="/detail-item/:idItem">
+          <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
+          <h1 className=" font-bold text-xl">Nama Produk</h1>
+          <p>Rp 200.000</p>
+        </Link>
+
+        <Link to="/detail-item/:idItem">
+          <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
+          <h1 className=" font-bold text-xl">Nama Produk</h1>
+          <p>Rp 200.000</p>
+        </Link>
+
+        <Link to="/detail-item/:idItem">
+          <div className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"></div>
+          <h1 className=" font-bold text-xl">Nama Produk</h1>
+          <p>Rp 200.000</p>
+        </Link>
       </div>
     </div>
   );

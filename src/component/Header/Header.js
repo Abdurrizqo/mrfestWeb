@@ -43,7 +43,7 @@ function Header() {
         />
 
         <img
-          className="absolute left-[35%] md:left-[20%] sm:bottom-[60px] md:bottom-[60px] bottom-[40px] w-40 md:w-96 lg:bottom-[65px] lg:left-[40%]"
+          className="absolute left-[35%] md:left-[20%] sm:bottom-[60px] md:bottom-[60px] bottom-[20px] w-40 md:w-96 lg:bottom-[65px] lg:left-[40%]"
           src={bulan}
           alt="bulan"
         />

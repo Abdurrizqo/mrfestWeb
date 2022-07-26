@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Shop() {
   const { ref, inView } = useInView({
@@ -43,6 +44,7 @@ function Shop() {
 
   return (
     <div
+      id="shop"
       ref={ref}
       animate={animation}
       className="w-full bg-black relative overflow-hidden py-10 sm:px-8 md:flex items-center md:py-16 lg:py-32"
@@ -58,13 +60,16 @@ function Shop() {
         animate={animation2}
       >
         <h1 className="text-[32px] font-bold text-white my-4">MRFEST Goods</h1>
-        <p className="text-white">
+        <p className="text-white mb-5">
           Select MRFEST 7.0 merch items are available to purchase online!
           Available as a pre-order for a limited time only.
         </p>
-        <button className="border rounded-sm text-white px-6 py-1 mt-4">
+        <Link
+          to="/shopping-list"
+          className="border rounded-sm text-white px-6 py-1 mt-4 cursor-pointer hover:bg-white hover:text-black delay-150 duration-500 transition ease-in"
+        >
           Shop Now
-        </button>
+        </Link>
       </motion.div>
     </div>
   );

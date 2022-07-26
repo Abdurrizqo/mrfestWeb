@@ -43,6 +43,7 @@ function TimeLine() {
 
   return (
     <div
+      id="event"
       ref={ref}
       className="w-full bg-black relative overflow-hidden py-20 md:py-28 lg:py-40"
     >

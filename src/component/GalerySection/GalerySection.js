@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 function GalerySection() {
   const { ref, inView } = useInView({
@@ -8,6 +9,8 @@ function GalerySection() {
   });
 
   const animation = useAnimation();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (inView) {
@@ -27,11 +30,12 @@ function GalerySection() {
 
   return (
     <div
+      id="gallery"
       ref={ref}
       className="w-full bg-black relative overflow-hidden py-10 md:py-16 lg:py-32"
     >
       <motion.div animate={animation}>
-        <div className="w-full bg-gray-300 h-[400px] relative mx-auto lg:w-[95%] rounded-md">
+        <div className="w-full bg-gray-300 h-[400px] relative mx-auto lg:w-[95%] lg:rounded-md">
           <div className="bg-white rounded p-5 w-2/5 absolute bottom-5 left-5 hidden md:block">
             <h1 className="text-3xl font-extrabold absolute right-5 -top-5">
               After Movie
@@ -46,14 +50,19 @@ function GalerySection() {
             </button>
           </div>
         </div>
-        <div className=" grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 mt-5 px-5 justify-items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 lg:w-60 lg:h-60 bg-gray-300 rounded"></div>
+        <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 mt-5 px-5 justify-items-center">
           <div className="w-32 h-32 md:w-40 md:h-40 lg:w-60 lg:h-60 bg-gray-300 rounded"></div>
           <div className="w-32 h-32 md:w-40 md:h-40 lg:w-60 lg:h-60 bg-gray-300 rounded"></div>
           <div className="w-32 h-32 md:w-40 md:h-40 lg:w-60 lg:h-60 bg-gray-300 rounded hidden md:block"></div>
           <div className="w-32 h-32 md:w-40 md:h-40 lg:w-60 lg:h-60 bg-gray-300 rounded hidden lg:block"></div>
+          <div className="w-32 h-32 md:w-40 md:h-40 lg:w-60 lg:h-60 bg-gray-300 rounded hidden lg:block"></div>
         </div>
-        <button className="border rounded-sm text-white px-6 py-1 mt-6 block mx-auto">
+        <button
+          onClick={() => {
+            navigate("/gallery");
+          }}
+          className="border rounded-sm text-white px-6 py-1 mt-6 block mx-auto hover:bg-white hover:text-black delay-150 duration-500 transition ease-in"
+        >
           See Galery
         </button>
       </motion.div>
