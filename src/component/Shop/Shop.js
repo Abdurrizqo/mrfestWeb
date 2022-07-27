@@ -47,7 +47,7 @@ function Shop() {
       id="shop"
       ref={ref}
       animate={animation}
-      className="w-full bg-black relative overflow-hidden py-10 sm:px-8 md:flex items-center md:py-16 lg:py-32"
+      className="w-full bg-[#1E1A1D] relative overflow-hidden py-10 sm:px-8 md:flex items-center md:py-16 lg:py-32"
     >
       <motion.div
         className="w-full md:w-[420px] md:h-[420px] h-80 bg-gray-300 md:mx-12 lg:ml-40 lg:mr-28"

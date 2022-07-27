@@ -7,20 +7,24 @@ import tanahTengah from "../../assets/tanahTengah.svg";
 import tanahAtas from "../../assets/tanahAtas.svg";
 import pohonKanan from "../../assets/pohonKanan.svg";
 import pohonKiri from "../../assets/pohonKiri.svg";
+import { AiFillPlayCircle } from "react-icons/ai";
 
 function Header() {
   return (
     <div className="h-[500px] md:h-screen w-full px-0 bg-gradient-to-b from-[#4E093B] via-[#6A0F52] to-[#EFB43E] relative overflow-hidden">
       <div className="w-full ">
         <div className="text-white w-80 md:w-[400px] lg:w-[600px] xl:w-[800px] mx-auto text-center px-6 top-48 relative z-[500]">
-          <h1 className="text-[32px] md:text-[48px] lg:text-[68px]">
+          <h1 className="text-[32px] newFont md:text-[48px] lg:text-[68px] bg-gradient-to-b from-[#EDC531] via-[#B88526] to-[#76520E] text-transparent bg-clip-text">
             MRFEST 7.0
           </h1>
           <h3 className="text-[20px] md:text-[32px] lg:text-[54px]">
             WERIFESTERIA : The Year of Victory and Euphoria
           </h3>
           <button className="px-6 md:px-8 mt-8 py-1 text-sm md:text-base bg-transparent text-black border-black border-[3px] rounded-[4px] hover:bg-black hover:text-white delay-150 duration-500 transition ease-in">
-            Watch Now
+            <div className="flex items-center gap-2">
+              <AiFillPlayCircle className="inline mr-1 text-2xl" />{" "}
+              <p>Trailer</p>
+            </div>
           </button>
         </div>
         <img

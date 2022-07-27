@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import AboutImg from "../../assets/about.png";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import Aboutmrfest from "../../assets/aboutmrfest.png";
 
 function NewExperience() {
   const { ref, inView } = useInView({
@@ -45,11 +45,11 @@ function NewExperience() {
     <div
       ref={ref}
       id="about"
-      className="w-full bg-black relative overflow-x-hidden py-32 sm:px-8 md:flex md:flex-row-reverse items-center md:py-24 lg:py-48"
+      className="w-full bg-[#1E1A1D] relative overflow-x-hidden py-32 sm:px-8 md:flex md:flex-row-reverse items-center md:py-24 lg:py-48"
     >
       <motion.div className="w-full" animate={animation}>
         <img
-          src={AboutImg}
+          src={Aboutmrfest}
           alt="about"
           className="w-full sm:w-[300px] md:w-96 block mx-auto"
         />

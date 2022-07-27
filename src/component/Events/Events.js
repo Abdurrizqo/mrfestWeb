@@ -1,10 +1,18 @@
 import React from "react";
+import Rangkaian1 from "../../assets/rangkaian1.png";
+import Rangkaian2 from "../../assets/rangkaian2.png";
 
 function Events() {
   return (
-    <div className="w-full bg-black px-5">
+    <div className="w-full bg-[#1E1A1D] px-5">
       <div className="md:flex md:items-center py-28 md:justify-center md:gap-12">
-        <div className="bg-gray-300 w-2/4 sm:w-72 lg:w-80 xl:w-1/4 h-80 sm:h-400 md:h-[500px] mx-auto md:mx-0"></div>
+        <div className="bg-gray-300 w-2/4 sm:w-72 lg:w-80 xl:w-1/4 h-80 sm:h-400 md:h-[500px] mx-auto md:mx-0">
+          <img
+            src={Rangkaian1}
+            alt="rangkaian 1"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="text-center text-white mt-8 md:text-left md:w-1/2 lg:w-[430px]">
           <h1 className="text-2xl lg:text-3xl font-black">LUGUBRIOUS</h1>
           <p className="mx-auto md:mx-0 mt-3 w-[80%]">
@@ -26,7 +34,13 @@ function Events() {
       </div>
 
       <div className="md:flex md:items-center py-20 md:justify-center md:gap-10">
-        <div className="bg-gray-300 w-2/4 sm:w-72 lg:w-80 xl:w-1/4 h-80 sm:h-400 md:h-[500px] mx-auto md:mx-0"></div>
+        <div className="bg-gray-300 w-2/4 sm:w-72 lg:w-80 xl:w-1/4 h-80 sm:h-400 md:h-[500px] mx-auto md:mx-0">
+          <img
+            src={Rangkaian2}
+            alt="rangkaian 2"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="text-center text-white mt-8 md:text-left md:w-1/2 lg:w-[430px]">
           <h1 className="text-2xl lg:text-3xl font-black">LUCULENCE</h1>
           <p className="mx-auto md:mx-0 mt-3 w-[80%]">

@@ -28,9 +28,8 @@ function PreviewLast() {
 
   return (
     <div
-      id="about"
       ref={ref}
-      className="w-full bg-black relative overflow-hidden py-40 lg:py-32 flex items-center"
+      className="w-full bg-[#1E1A1D] relative overflow-hidden py-40 lg:py-32 flex items-center"
     >
       <motion.div className="w-full" animate={animation}>
         <div className="w-full h-80 sm:h-[360px] md:h-[420px] lg:h-[480px] md:w-[75%] lg:w-[85%] bg-gray-300 mx-auto"></div>
