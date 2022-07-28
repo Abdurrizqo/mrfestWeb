@@ -31,7 +31,7 @@ function Gallery() {
           className="w-full h-full object-cover lg:rounded-md"
         />
         <div className="bg-white rounded p-5 w-2/5 absolute bottom-5 left-5 hidden md:block overflow-hidden">
-          <h1 className="font-bold text-xl mb-4">MRFEST 6.0</h1>
+          <h1 className="font-bold text-xl mb-4">Latest MRFEST Offline</h1>
           <p className="mb-3">
             Retrouvailles is a beautiful term to describe the happinesss of
             meeting someone that is very dear to you after a long time.
@@ -48,12 +48,12 @@ function Gallery() {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-4 gap-x-2 justify-items-center px-5 pb-10">
+      <div className="w-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-y-4 gap-x-2 justify-items-center px-5 pb-10">
         {load
           ? ListGallery.map((item) => {
               return (
                 <div
-                  className="w-32 h-32 lg:w-60 lg:h-60 rounded bg-gray-300"
+                  className="w-32 h-32 lg:w-60 lg:h-60 rounded"
                   key={item.id}
                 >
                   <img
@@ -68,7 +68,7 @@ function Gallery() {
       </div>
 
       <button
-        className="text-white block mx-auto text-2xl flex gap-3 items-end"
+        className="text-white mx-auto text-2xl flex gap-3 items-end"
         onClick={() => {
           load ? setLoad(false) : setLoad(true);
         }}

@@ -43,7 +43,7 @@ function GalerySection() {
             className="w-full h-full object-cover lg:rounded-md"
           />
           <div className="bg-white rounded p-5 w-2/5 absolute bottom-5 left-5 hidden md:block">
-            <h1 className="font-bold text-xl mb-4">MRFEST 6.0</h1>
+            <h1 className="font-bold text-xl mb-4">Latest MRFEST Offline</h1>
             <p className="mb-3">
               Retrouvailles is a beautiful term to describe the happinesss of
               meeting someone that is very dear to you after a long time.

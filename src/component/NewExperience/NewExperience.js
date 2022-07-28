@@ -62,10 +62,10 @@ function NewExperience() {
           New Experience In Magical Forest
         </h1>
         <p className="text-white">
-          Malang Revolutive Festival 7.0 known as MRFEST 7.0 is an event held to
-          announce the 9th Anniversary of the Information System Students Big
-          Family. This year The theme of this year's MRFEST 7.0 is "Magic
-          Forest" called "WERIFESTERIA: A Year of Victory and Euphoria".
+          Malang Revolutive Festival 7.0 or known as MRFEST 7.0 is an event to
+          commemorate the 9th Anniversary of KBMSI UB. This year, the theme of
+          MRFEST 7.0 is "Magical Forest" named "WERIFESTERIA: The Year of
+          Victory and Euphoria
         </p>
       </motion.div>
     </div>

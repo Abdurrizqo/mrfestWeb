@@ -61,8 +61,8 @@ function Shop() {
       >
         <h1 className="text-[32px] font-bold text-white my-4">MRFEST Goods</h1>
         <p className="text-white mb-5">
-          Select MRFEST 7.0 merch items are available to purchase online!
-          Available as a pre-order for a limited time only.
+          Select the merchandise of MRFEST 7.0 which available to purchase
+          online!
         </p>
         <Link
           to="/shopping-list"
