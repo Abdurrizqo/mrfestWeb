@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AfterMovie from "../../assets/aftermovie.png";
 import ListGallery from "./GalleryList.json";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 function Gallery() {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   let indents = [];
 
   for (let i = 0; i < 5; i++) {

@@ -40,16 +40,16 @@ function Navbar() {
           <Link className="text-white" to="/">
             Home
           </Link>
-          <Link to="/" className="text-white">
+          <Link to="/event" className="text-white">
             Events
           </Link>
-          <Link to="/" className="text-white">
+          <Link to="/about" className="text-white">
             About
           </Link>
-          <Link to="/" className="text-white">
+          <Link to="/shopping-list" className="text-white">
             Shop
           </Link>
-          <Link to="/" className="text-white">
+          <Link to="/gallery" className="text-white">
             Gallery
           </Link>
         </div>

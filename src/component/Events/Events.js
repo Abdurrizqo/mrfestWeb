@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Rangkaian1 from "../../assets/rangkaian1.png";
 import Rangkaian2 from "../../assets/rangkaian2.png";
 
 function Events() {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="w-full bg-[#1E1A1D] px-5">
       <div className="md:flex md:items-center py-28 md:justify-center md:gap-12">

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import Aboutmrfest from "../../assets/aboutmrfest.png";
+import { Link } from "react-router-dom";
 
 function NewExperience() {
   const { ref, inView } = useInView({
@@ -48,11 +49,13 @@ function NewExperience() {
       className="w-full bg-[#1E1A1D] relative overflow-x-hidden py-32 sm:px-8 md:flex md:flex-row-reverse items-center md:py-24 lg:py-48"
     >
       <motion.div className="w-full" animate={animation}>
-        <img
-          src={Aboutmrfest}
-          alt="about"
-          className="w-full sm:w-[300px] md:w-96 block mx-auto"
-        />
+        <Link to="/about">
+          <img
+            src={Aboutmrfest}
+            alt="about"
+            className="w-full sm:w-[300px] md:w-96 block mx-auto"
+          />
+        </Link>
       </motion.div>
       <motion.div
         className="px-5 text-center md:text-left md:ml-20 md:pr-10 lg:ml-40 lg:pr-20"

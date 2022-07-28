@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function ItemList() {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="w-full pt-24 md:pt-28 lg:pt-32">
       <h1 className="text-center text-xl sm:text-2xl md:text-3xl font-bold mb-10">
