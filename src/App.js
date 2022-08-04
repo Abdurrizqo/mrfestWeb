@@ -18,8 +18,8 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/event" element={<Events />} />
         <Route path="/about" element={<About />} />
-        <Route path="/shopping-list" element={<ItemList />} />
-        <Route path="/detail-item/:idItem" element={<DetailItem />} />
+        {/* <Route path="/shopping-list" element={<ItemList />} />
+        <Route path="/detail-item/:idItem" element={<DetailItem />} /> */}
       </Routes>
       <Footer />
     </>

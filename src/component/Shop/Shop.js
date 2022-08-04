@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
+import shopCoomingSoon from "../../assets/shopCoomingSoon.png";
 
 function Shop() {
   const { ref, inView } = useInView({
@@ -50,10 +51,14 @@ function Shop() {
       className="w-full bg-[#1E1A1D] relative overflow-hidden py-10 sm:px-8 md:flex items-center md:py-16 lg:py-32"
     >
       <motion.div
-        className="w-full md:w-[420px] md:h-[420px] h-80 bg-gray-300 md:mx-12 lg:ml-40 lg:mr-28"
+        className="w-full md:w-[420px] md:h-[420px] h-80 md:mx-12 lg:ml-40 lg:mr-28"
         animate={animation}
       >
-        {/* <img src={AboutImg} alt="about" /> */}
+        <img
+          src={shopCoomingSoon}
+          alt="about"
+          className="w-full h-full object-cover"
+        />
       </motion.div>
       <motion.div
         className="px-5 text-center md:text-left md:w-[280px] lg:w-[480px]"
@@ -64,12 +69,12 @@ function Shop() {
           Select the merchandise of MRFEST 7.0 which available to purchase
           online!
         </p>
-        <Link
+        {/* <Link
           to="/shopping-list"
           className="border rounded-sm text-white px-6 py-1 mt-4 cursor-pointer hover:bg-white hover:text-black delay-150 duration-500 transition ease-in"
         >
-          Shop Now
-        </Link>
+          Coming Soon
+        </Link> */}
       </motion.div>
     </div>
   );
