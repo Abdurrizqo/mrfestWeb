@@ -28,10 +28,10 @@ function Events() {
               <span className="mr-[60px]"> Date </span> 25 September 2022
             </h4>
             <h4>
-              <span className="mr-[60px]"> Time </span> Time
+              <span className="mr-[60px]"> Time </span> 07.30 A.M.
             </h4>
             <h4>
-              <span className="mr-10"> Location </span> Location
+              <span className="mr-10"> Location </span> FILKOM UB
             </h4>
           </div>
         </div>
@@ -53,15 +53,7 @@ function Events() {
             performances.
           </p>
           <div className="mt-5 text-left flex flex-col gap-3">
-            <h4>
-              <span className="mr-[60px]"> Date </span> 25 September 2022
-            </h4>
-            <h4>
-              <span className="mr-[60px]"> Time </span> Time
-            </h4>
-            <h4>
-              <span className="mr-10"> Location </span> Location
-            </h4>
+            <h1 className="text-2xl text-white">Coming Soon</h1>
           </div>
         </div>
       </div>
