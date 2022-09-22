@@ -12,19 +12,19 @@ function Navbar() {
           <img src={logo} className="w-24 h-24" alt="Logo" />
         </div>
         <div className="flex gap-4">
-          <Link className="text-white" to="/">
+          <Link className="text-white hover:text-[#B88526]" to="/">
             Home
           </Link>
-          <a href="#event" className="text-white">
+          <a href="#event" className="text-white hover:text-[#B88526]">
             Events
           </a>
-          <a href="#about" className="text-white">
+          <a href="#about" className="text-white hover:text-[#B88526]">
             About
           </a>
-          <a href="#shop" className="text-white">
+          <a href="#shop" className="text-white hover:text-[#B88526]">
             Shop
           </a>
-          <a href="#gallery" className="text-white">
+          <a href="#gallery" className="text-white hover:text-[#B88526]">
             Gallery
           </a>
         </div>
