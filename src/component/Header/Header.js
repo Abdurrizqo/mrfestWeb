@@ -20,12 +20,12 @@ function Header() {
           <h3 className="text-[20px] md:text-[32px] lg:text-[54px]">
             WERIFESTERIA : The Year of Victory and Euphoria
           </h3>
-          <button className="px-6 md:px-8 mt-8 py-1 text-sm md:text-base bg-transparent text-black border-black border-[3px] rounded-[4px] hover:bg-black hover:text-white delay-150 duration-500 transition ease-in">
+          {/* <button className="px-6 md:px-8 mt-8 py-1 text-sm md:text-base bg-transparent text-black border-black border-[3px] rounded-[4px] hover:bg-black hover:text-white delay-150 duration-500 transition ease-in">
             <div className="flex items-center gap-2">
               <AiFillPlayCircle className="inline mr-1 text-2xl" />{" "}
               <p>Trailer</p>
             </div>
-          </button>
+          </button> */}
         </div>
         <img
           className="absolute top-0 w-full"

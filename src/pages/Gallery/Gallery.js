@@ -77,7 +77,16 @@ function Gallery() {
           load ? setLoad(false) : setLoad(true);
         }}
       >
-        Load More {load ? <FiChevronUp /> : <FiChevronDown />}
+        {load ? (
+          <>
+            Less <FiChevronUp />
+          </>
+        ) : (
+          <>
+            Load More
+            <FiChevronDown />
+          </>
+        )}
       </button>
     </div>
   );
