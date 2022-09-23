@@ -45,16 +45,17 @@ function Header() {
             <div className="flex flex-col md:flex-row justify-center items-center mt-4 md:mt-12 gap-x-5 gap-y-3">
               <a
                 href="https://www.instagram.com/reel/CgBopAflCXy/?igshid=NzNkNDdiOGI="
-                className="cursor-pointer w-32 py-1 text-sm md:text-base bg-transparent text-black border-black border-[3px] rounded-[4px] hover:bg-black hover:text-white delay-150 duration-500 transition ease-in"
+                className="cursor-pointer w-40 py-1 text-sm md:text-base bg-transparent text-black border-black border-[3px] rounded-[4px] hover:bg-black hover:text-white delay-150 duration-500 transition ease-in"
               >
-                <div>
+                <div className="flex items-center gap-2 justify-center">
+                  <AiFillPlayCircle className="inline mr-1 text-2xl" />
                   <p>Throwback</p>
                 </div>
               </a>
 
               <button
                 onClick={ShowModal}
-                className="w-32 py-1 text-sm md:text-base bg-transparent text-black border-black border-[3px] rounded-[4px] hover:bg-black hover:text-white delay-150 duration-500 transition ease-in"
+                className="w-40 py-1 text-sm md:text-base bg-transparent text-black border-black border-[3px] rounded-[4px] hover:bg-black hover:text-white delay-150 duration-500 transition ease-in"
               >
                 <div className="flex items-center gap-2 justify-center">
                   <AiFillPlayCircle className="inline mr-1 text-2xl" />
