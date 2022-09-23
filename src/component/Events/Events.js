@@ -46,7 +46,7 @@ function Events() {
           />
         </div>
         <div className="text-center text-white mt-8 md:text-left md:w-1/2 lg:w-[430px]">
-          <h1 className="text-2xl lg:text-3xl font-black">LUCULENCE</h1>
+          <h1 className="text-2xl lg:text-3xl font-black">LUCELENCE</h1>
           {/* <p className="mx-auto md:mx-0 mt-3 w-[80%]">
             The second series of MRFEST 7.0 which contains art performances from
             Large Familes of Information System Students and Guest Star

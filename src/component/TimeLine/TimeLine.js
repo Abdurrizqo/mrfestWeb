@@ -76,7 +76,7 @@ function TimeLine() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h1 className="text-white font-bold text-center mt-3">LUCULENCE</h1>
+            <h1 className="text-white font-bold text-center mt-3">LUCELENCE</h1>
             <p className="text-white text-center">Coming Soon</p>
           </Link>
         </motion.div>
