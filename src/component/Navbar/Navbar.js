@@ -7,7 +7,7 @@ function Navbar() {
 
   if (location.pathname === "/") {
     return (
-      <div className="w-full bg-[#433F42] h-[80px] flex items-center justify-between px-5 md:px-10 lg:px-20 fixed z-[1000] drop-shadow-2xl">
+      <div className="w-full bg-[#433F42] h-[80px] flex items-center justify-between px-5 md:px-10 lg:px-20 fixed z-[900] drop-shadow-2xl">
         <div className="w-24">
           <img src={logo} className="w-24 h-24" alt="Logo" />
         </div>
